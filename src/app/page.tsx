@@ -40,7 +40,7 @@ export default function Home() {
 
     try {
       const response = await fetch(
-        `http://www.omdbapi.com/?t=${search}&apikey=ce970688`
+        `https://www.omdbapi.com/?t=${search}&apikey=ce970688`
       );
       const data = await response.json();
       setmovieDetails(data);
